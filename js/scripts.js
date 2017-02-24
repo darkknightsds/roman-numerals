@@ -1,14 +1,16 @@
 //Back-end logic:
 var numberToConvert = ""
 var output = ""
+var ones = ""
+var tens = ""
 var invalid = "Try again."
 var onesColumn = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
-var tensColumn = ["X", "XX"]
+var tensColumn = ["X", "XX","XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
 var convertedNumber = function(input) {
   if (input.length === 1) {
-    return input = ("000" + input);
+    return ones = ("000" + input).charAt(3);
   } else if (input.length === 2) {
-    return input = ("00" + input);
+    return tens = ("00" + input).charAt(2,3);
   } else if (input.length === 3) {
     return input = "0" + input;
   } else {
@@ -54,6 +56,17 @@ var convertedNumber = function(input) {
 //   }
 // };
 };
+// output.forEach(function {
+//   return onesColumn[input - 1];
+// }
+
+// var assignValueOnes = function(input) {
+// return input = onesColumn[input - 1];
+// }
+
+// var assignValueTens = function(input) {
+// return input = tensColumn[input - 1];
+// }
 
 
 //Front-end logic:
@@ -62,6 +75,8 @@ $(document).ready(function() {
     event.preventDefault();
     numberToConvert = $("#numberInput").val();
     output = convertedNumber(numberToConvert);
+    // ones = assignValueOnes(output);
+    // tens = assignValueTens(output);
     $("#result").text(output);
 });
 });
