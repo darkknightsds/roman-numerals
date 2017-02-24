@@ -1,0 +1,43 @@
+body {
+  font-family: serif;
+  background-image: url("../img/scroll-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.jumbotron {
+  background-color: transparent;
+}
+h1.jumbotron {
+  text-align: center;
+}
+#credit {
+  font-style: italic;
+}
+#formOne {
+  width: 40%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 16px;
+}
+#numberInput {
+  opacity: .7;
+}
+#buttonInput {
+  opacity: .9;
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  font-size: 16px;
+}
+#result {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 2%
+}
+.mainBody {
+  font-size: 16px;
+}

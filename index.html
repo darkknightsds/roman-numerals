@@ -9,10 +9,15 @@
   </head>
   <body>
     <div class="container">
-    <form id="formOne">
-      <label for="numberInput">Enter a number</label>
+    <h1 class="jumbotron">ROMAN NUMERAL CONVERTER</h1>
+    <h3>Roman Numerals History</h3>
+    <p class="mainBody">The numeric system represented by Roman numerals originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers in this system are represented by combinations of letters from the Latin alphabet. Roman numerals, as used today, are based on seven symbols:	I, V, X, L, C, D and M.</p>
+    <p class="mainBody">The use of Roman numerals continued long after the decline of the Roman Empire. From the 14th century on, Roman numerals began to be replaced in most contexts by the more convenient Hindu-Arabic numerals; however, this process was gradual, and the use of Roman numerals persists in some minor applications to this day.</p>
+    <p id="credit">Credit: Wikipedia</p>
+    <form id="formOne" class="form-group">
+      <label for="numberInput" id="formText">Enter a Number Between 1 and 3,999:</label>
       <input id="numberInput" class="form-control" type="number" min="1" max="3999">
-      <button class="btn" type="submit">convert!</button>
+      <button class="btn btn-default" type="submit" id="buttonInput">Convert!</button>
     </form>
     <div id="result">
     </div>
