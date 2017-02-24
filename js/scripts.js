@@ -1,25 +1,22 @@
 //Back-end logic:
 var numberToConvert = ""
+var output = ""
 var invalid = "Try again."
-
 var onesColumn = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 var tensColumn = ["X", "XX"]
-
-
 var convertedNumber = function(input) {
   if (input.length === 1) {
-    input = ("000" + input);
+    return input = ("000" + input);
   } else if (input.length === 2) {
-    input = ("00" + input);
+    return input = ("00" + input);
   } else if (input.length === 3) {
-    input = "0" + input;
+    return input = "0" + input;
   } else {
-    (input === input);
+    return input;
   }
-console.log(input);
-  for (var index = 1; index = 1; index += 4) {
-    return onesColumn[input - 1];
-  }
+  // for (var index = 1; index = 1; index += 4) {
+  //   return onesColumn[input - 1];
+  // }
   // for (var index = 1; index = 1; index += 3) {
   //   return tensColumn[input - 1];
   // }
@@ -58,12 +55,13 @@ console.log(input);
 // };
 };
 
+
 //Front-end logic:
 $(document).ready(function() {
   $("#formOne").submit(function() {
     event.preventDefault();
     numberToConvert = $("#numberInput").val();
-    var output = convertedNumber(numberToConvert);
+    output = convertedNumber(numberToConvert);
     $("#result").text(output);
 });
 });
