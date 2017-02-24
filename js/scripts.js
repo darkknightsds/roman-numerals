@@ -8,9 +8,12 @@ var onesColumn = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 var tensColumn = ["X", "XX","XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
 var convertedNumber = function(input) {
   if (input.length === 1) {
-    return ones = ("000" + input).charAt(3);
+    var ones = input.charAt(0);
+    return ones = onesColumn[input - 1];
   } else if (input.length === 2) {
-    return tens = ("00" + input).charAt(2,3);
+    var tens = input.charAt(0);
+    var ones = input.charAt(1);
+    return tensColumn[tens - 1] + onesColumn[ones - 1];
   } else if (input.length === 3) {
     return input = "0" + input;
   } else {
