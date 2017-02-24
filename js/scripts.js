@@ -8,12 +8,24 @@ var tensColumn = ["X", "XX"]
 
 var convertedNumber = function(input) {
   if (input.length === 1) {
-    input = "000" + input;
+    input = ("000" + input);
   } else if (input.length === 2) {
-    input = "00" + input;
+    input = ("00" + input);
+  } else if (input.length === 3) {
+    input = "0" + input;
+  } else {
+    (input === input);
   }
-  console.log(input);
+console.log(input);
+  for (var index = 1; index = 1; index += 4) {
     return onesColumn[input - 1];
+  }
+  // for (var index = 1; index = 1; index += 3) {
+  //   return tensColumn[input - 1];
+  // }
+  // for (var index = 1; index = 1; index += 3) {
+  //   return tensColumn[input - 1];
+  // }
   // for (input = 3; input <= 3; input +=1) {
   //     return tensColumn[input - 1];
   //   }
