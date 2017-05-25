@@ -1,4 +1,4 @@
-OBJECTIVE: Convert arabic numbers to roman numerals
+This simple HTML and CSS web page allows users to convert arabic numbers to roman numerals. An overview of user behaviors are listed below.
 
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
